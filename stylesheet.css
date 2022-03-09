@@ -16,19 +16,17 @@ h1,h2,h3 {color: black;
 .light-mode {
         background-color: white;
         color: black;}
-nav {display:table-cell;
-      justify-content: left;
-    }
 
 .row {display: flex;
 }
 
-
+nav { display: grid;}
 
 img {width:300px;
       height: 200px;
       display: block;
       justify-content: center;
+	padding: 50px;
       }
 
 div{justify-content: center;}
@@ -37,21 +35,28 @@ p{color: blue;
   font-family: sans-serif;
   text-align:justify;
   }
-ol {text-align: ;
-    color: blue;
+ul {text-align: ;
+    color: red;
   }
-li {justify-content: left;
-    color: blue;}
+li a {
+    color: blue;
+	text-align: center;
+	display: block;
+	padding: 14px 16px;
+	}
+li a:hover {background-color: #111;}
+li { display: grid;
+	float: left;}
 iframe {width:500px;
         height:800px;
         justify-content: left;}
 a {text-align: center;
 display: block;}
-table {display:grid;
-        background-color: purple;
-      color: yellow;
-    border: 2px solid;
-  width: 50%vw;}
+table {display:grid; justify-content: center;
+      color: red;
+padding: 50px 50px;
+  width:100%;
+	height: 100%;}
   tr {height:auto;
   width:auto;
 border: 2px solid;}
