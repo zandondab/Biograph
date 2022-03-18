@@ -6,25 +6,38 @@
 	<link rel= "stylesheet" href="stylesheet.css">
 	</head>
 
-	<body>
+	<body id="DarkModetext">
+		<script>
+		function darkMode() {
+				document.getElementById('DarkModetext').style.backgroundColor="black";
+				document.getElementById('ptext').style.color="white";
+				document.getElementById('htext').style.color="white";
+			}
+		</script>
 
 	<nav><ul>
 		<li><a href= "backgroundhistory.html"><strong>Background History</strong> </a></li>
-		|<li> <a href="education.html"><strong> Education and Career</strong> </a></li>
+		<li> <a href="education.html"><strong> Education and Career</strong> </a></li>
 	</nav>
-	<h2><center>A brief history about myself</center> </h2>
+	<h2 id="htext"><center>A brief history about myself</center> </h2>
 
-	<p>From being a very ambitious and visionary boy In Zimbabwe, to now having braved my way through life and come to study in USA and become the first person ever in my family and community to<br>
+	<div class= "row">
+		<div class="image">
+			<img id="bern" src="highschool.jpg" alt="High School Throwback">
+	<button onclick='document.getElementById("bern").src="professional.jpeg"'>professional headshot</button>
+	</div>
+
+	<p id="ptext">From being a very ambitious and visionary boy In Zimbabwe, to now having braved my way through life and come to study in USA and become the first person ever in my family and community to<br>
 		 go to college, I believe I have an extremely unique perspective about the world that I can bring to any community. I have been called a crazy dreamer, misunderstood, and booed before when<br>
 		 I would express my ambitions to the people around me back in high school, but I have managed to achieve my dreams through believing in my abilities.I have lived in 3 countries on my own so<br>
 		 far, and it keeps me so much self-pride and satisfaction when I think about it because Iget to realize how brave I am. I never hesitate to take initiatives and make that first leap of faith,<br>
 		 because I am a strong believer that it is the ambitious and courageous people who get to realize their full potential in life and never the cowards<br>
 	<p>
 <div>
-	 <h2><center>Table Summary:</center></h3>
-			<table>
+	 <h2 id="htext"><center>Favorites:</center></h3>
+			<table id="htext">
 				<tr>
-					<th style="backround-color: white; color: black;">Hobbies</th>
+					<th style="background-color: white; color: black;">Hobbies</th>
 					<th style= "background-color: white; color: black;">Favorite Subjects</th>
 					<th style="background-color: white; color: black;">Favorite Artists </th>
 				</tr>
@@ -38,40 +51,17 @@
 					<th>Jah Prayzah</th>
 				</tr>
 			</table>
-			<footer>
+
 </div>
 
-		<h2 ><center> My Social Media</center> </h2>
+<footer>
 		<nav> <ul>
-		<li>	<a href="https://www.facebook.com/bernard.zandonda.3"><strong> Facebook</strong> </a></li> | <li><a =href="https://www.instagram.com/bern_e.z/"><strong>Instagram</strong> </a></li>
+		<li>	<a href="https://www.facebook.com/bernard.zandonda.3"><strong> Facebook</strong> </a></li>  <li><a =href="https://www.instagram.com/bern_e.z/"><strong>Instagram</strong> </a></li>
 		</nav>
-		<div class= "row">
-			<div class="image">
-				<img src="highschool.jpg" alt="High School Throwback">
-			</div>
-			<div class= "image">
-				<img src="dubai.jpg" alt="In Dubai">
-			</div>
-			<div class="image">
-				<img src="professional.jpeg">
-			</div>
-		</div>
-		<button onlick="lightmode()"> Light Mode </button>
-		<button onclick="darkmode()"> Dark Mode </button>
-		<script>
-		function darkMode() {
-        var element = document.body;
-        var content = document.getElementById("DarkModetext");
-        element.className = "dark-mode";
-        content.innerText = "Dark Mode is ON";
-      }
-      function lightMode() {
-        var element = document.body;
-        var content = document.getElementById("DarkModetext");
-        element.className = "light-mode";
-        content.innerText = "Dark Mode is OFF";
-      }
-		</script>
+
+		<button type="button" onclick="darkMode()"> Dark Mode </button>
+		<button onclick="window.print()">Print this page </button>
+
 
 		<marquee behavior ="scroll" direction="left"> Hope you having a nice day!! </marquee>
 	</footer>

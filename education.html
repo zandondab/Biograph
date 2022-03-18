@@ -4,23 +4,33 @@
 	<meta charset="UTF-8">
 	<title>Bernard's Biography</title>
 	<link rel= "stylesheet" href="stylesheet.css">
+
 	</head>
 
 	<body>
+		<script type="text/javascript">
+		function introTranslation (){
+			console.log("inside the function")
+			document.getElementById("uni").innerText="Hola. Me IIamo Bernard. Mi apeIIido es Zandonda. Soy de Zimbabwe. (No) hablo español por que I love to travel the world,<br> so I would manage to speaking espanol would allow me to have a conversation with people from the many espanol speaking countries around the globe Me gusta la universidad porque it is a small institution"
+ 		}
+		</script>
 	<h1> My Education Experience</h1>
-  <p>After finishing High Scholl in 2016,I did not immediately go to college, but took a two year gap-period.During that time, I travelled more and sought to find myself and have a better<br>
+  <p id="uni">After finishing High Scholl in 2016,I did not immediately go to college, but took a two year gap-period.During that time, I travelled more and sought to find myself and have a better<br>
 		 understanding of what I wanted for my life. I attribute that period in my life to the maturity, stabilty and growth that I developed and saw me excelling exceptionally when I finally<br>
 		 went to college. I had experinced life in the real world, so in college I knew that I had to be on top of my game inorder to thrive in the world. Most of the students I went to college<br>
 		 with did not have that same maturity and awareness about life that I had.</p>
-		 <br>
-		 <br>
-		 <br>
-	<p> Growing up, I had always wanted to become an engineer after university because of the passion and curiosity that I grew up with towards technology. Whenever I got a new toy, I would put<br>
+
+	<p id="uni"> Growing up, I had always wanted to become an engineer after university because of the passion and curiosity that I grew up with towards technology. Whenever I got a new toy, I would put<br>
 		 it apart trying to see and understand how it had been made. Therefore, when I came for college, I knew I had to major in an enginnering major or technology major. My school did not have<br>
 		 the kind of engineering major that I wanted, Aerospace Engineering, so I was left with Computer Information Systems as my next best option. For the past years that I have been in college,<br>
 		 I have been enjoying my major very much because it also requires me to take classes in other fields like business. So, I am going to graduate with knowledge not only in my IT field but <br>
 		 several others as well which will absolutely give me a competetive	edge in the corporate world. For a greater presentation of my skills and career journey thus far, I have attached my resume<br>
 			below.</p>
+			<div>
+				<button onclick="introTranslation()">Myself In Spanish
+				</button>
+		</div>
+
 	<div class="resum">
 		<iframe src= "resume.pdf"> </ifrmae>
 </div>
